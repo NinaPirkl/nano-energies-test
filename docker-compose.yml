@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+
+  api:
+    image: testapi:v1
+    ports:
+      - "8084:8084"
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  ui:
+    image: testui:v1
+    ports:
+      - "8085:80"
